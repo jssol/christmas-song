@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <audio id="audio" src="bells.mp3"></audio>
+        <div class="container">
+            <p id="greeting">🎄 Jingle all the way! 🔔</p>
+            <div class="btn-container">
+                <button title="Previous" class="next-prev" id="prev-btn">
+                    <span class="material-icons-outlined">skip_previous</span>
+                </button>
+                    
+                <button title="Play" class="play-btn" id="play-btn">
+                    <span class="material-icons-outlined">play_arrow</span>
+                </button>
+                    
+                <button title="Pause" class="pause-btn" id="pause-btn">
+                    <span class="material-icons-outlined">pause</span>
+                </button>                 
+                
+                <button title="Stop" class="stop-btn" id="stop-btn">
+                    <span class="material-icons-outlined">stop</span>
+                </button>                
+                
+                <button title="Next" class="next-prev" id="next-btn">
+                    <span class="material-icons-outlined">skip_next</span>
+                </button>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="100" value="50" class="slider" id="volume">
+                <p id="volume-value"></p>
+            </div>
+        </div>
+        <script src="index.pack.js"></script>
+    </body>
+</html>

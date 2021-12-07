@@ -1,0 +1,127 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+body {
+    background-color: var(--bright-red);
+    height: 100vh;
+}
+
+.container {
+    background: var(--snow);
+    color: var(--wine-red);
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 35px;
+    min-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.material-icons-outlined {
+    padding-top: 5px;
+    margin: 0;
+    font-size: 30px;
+}
+
+button {
+    padding: 0.25em 0.5em;
+    border: none;
+    font-size: 1.2rem;
+    background-color: var(--dark-green);
+    color: var(--snow);
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.02)
+}
+
+#greeting {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.btn-container {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.pause-btn {
+    background-color: var(--gold);
+    color: var(--wine-red)
+}
+
+.stop-btn {
+    background-color: var(--wine-red);
+}
+
+.next-prev {
+    background-color: var(--light-green);
+}
+
+.slidecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: -.25em;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  border-radius: 2px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.65;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-right: .5em;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--dark-green);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background: var(--dark-green);
+  cursor: pointer;
+}
+
+#volume:focus {
+    outline: none;
+}
